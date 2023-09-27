@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SELAMAT DATANG</title>
+</head>
+<body>
+    <h1>Selamat Datang di Website Kami</h1>
+    <ul>
+        <li><a href="login-responsive.html">Login</a></li>
+        <li><a href="product-responsive.html">Produk</a></li>
+    </ul>
+<body>
+    <div class="container">
+        <div class="form">
+            <link rel="stylesheet" href="stle.css"><body>
+            <h2>form Pendaftaran Studi Independen PT.Arkatama Multi Solusi Indo</h2>
+            <form action="proses_pendaftaran.php" method="POST">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                <label class="radio-label" for="laki-laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                <label class="radio-label" for="perempuan">Perempuan</label>
+                
+                <label for="prodi">Prodi:</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Manajemen">Manajemen</option>
+                    <option value="Psikologi">Psikologi</option>
+                    <option value="Pendidikan Informatika">Pendidikan Informatika</option>
+                    <option value="Hukum">Hukum</option>
+                </select>
+                
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+                
+                <label for="foto">Unggah Foto Diri:</label>
+                <input type="file" id="foto" name="foto" class="file-input" required>
+                
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+        <div class="form">
+            <link rel="stylesheet" href="halo.css"><body>
+            <h2>Login</h2>
+            <form action="proses_login.php" method="POST">
+                <label for="login_email">Email:</label>
+                <input type="email" id="login_email" name="login_email" required>
+                
+                <label for="login_password">Password:</label>
+                <input type="password" id="login_password" name="login_password" required>
+                 <div class="input-container">
+                <input type="text" id="captcha" name="captcha" class="captcha-input" required placeholder="CAPTCHA">
+                <img src="capcha.jpg" alt="CAPTCHA" class="captcha-image">
+            </div>
+            <div class="video-container">
+                <video controls autoplay loop>
+                        <video width="640" height="360" controls autoplay loop>
+                      <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            <div>
+             <button type="submit">Login</button>
+                    </form>
+                </div>
+    </div>
+</body>
+</html>
